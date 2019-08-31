@@ -1,0 +1,51 @@
+ 
+
+@include Sm{
+    .w_f{
+        width:100%;
+        float: none;
+    }
+    header{
+        position: static;
+        text-align: center;
+        
+        ul{
+            display: block;
+        }
+    }
+    
+    .h2{
+        font-size: 1rem;
+    }
+
+    .services{
+        .services_parent{
+            grid-template-columns: repeat(2,1fr)
+    }
+  }
+    .images{
+        grid-template-columns: repeat(2,1fr)
+
+    }
+}
+ @include Md{
+    .images{
+        grid-template-columns: repeat(2,1fr)
+
+    }
+ }
+ @include Lg{
+
+}
+
+@include Xs{
+    .services{
+        .services_parent{
+            grid-template-columns: repeat(1,1fr)
+    }
+  }
+  .images{
+    grid-template-columns: repeat(1,1fr)
+
+}
+ }
